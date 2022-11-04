@@ -9,7 +9,6 @@ def main(args):
     model = pickle.load(open('./Model_save/'+model_type+'.pkl','rb'))
     
     feature = np.load('../feature/feature.npy')
-    print(feature)
     label = model.predict(feature)
     print(label)
     
