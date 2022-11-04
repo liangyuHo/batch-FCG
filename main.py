@@ -9,7 +9,7 @@ import numpy as np
 
 
 def main(args):
-    cmd = 'mkdir ./Redefine/ ./DetectionUserDefined/'
+    cmd = 'mkdir ./Redefine/ ./DetectionUserDefined/ ./cfg_output/'
     os.system(cmd)
     cmd = 'python CG_extract.py'
     os.system(cmd)
@@ -33,7 +33,7 @@ def main(args):
     feature = np.array(feature)
     print(feature)
     np.save('./feature/feature',feature)
-    cmd = 'rm -rf ./Redefine/ fdupes.txt ./DetectionUserDefined/  tmp.csv test.csv'
+    cmd = 'rm -rf ./Redefine/ fdupes.txt ./DetectionUserDefined/  tmp.csv test.csv ./cfg_output/'
     os.system(cmd)
 
 if __name__=='__main__':
