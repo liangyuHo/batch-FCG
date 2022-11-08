@@ -25,11 +25,19 @@ def main(args):
     os.system(cmd)
     
     feature=[]
+    name = []
+
     data = pd.read_csv('./test.csv',header=None)
     print(data.shape[0])
     for i in range(data.shape[0]):
         tmp = data.iloc[i,1:132].values.tolist()
         feature.append(tmp)
+    
+    for i in range(data.shape[0]):
+        tmp = data.iloc[i,0]
+        name.append(tmp)
+    name = np.array(name)
+    feature.append(name)
     feature = np.array(feature)
     print(feature)
     np.save('./feature/feature',feature)
