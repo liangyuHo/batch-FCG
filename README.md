@@ -48,5 +48,5 @@ python detector.py --model [Model]
 | KNN   | 94.12    |
 | LR    | 97.79    |
 | MLP   | 86.94    |    
-# Result
+
 
