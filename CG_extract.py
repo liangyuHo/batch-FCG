@@ -81,7 +81,7 @@ def main():
     sys.setrecursionlimit(100000000)
     #list=Filelist.Filelist()
     #folder=Filelist.ExtractFolder(list)
-    elf_type = ['binary']
+    elf_type = ['ELF_Analyze']
     #elf_type = ['linuxmal']
     
     
